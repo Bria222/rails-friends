@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class = 'text-primary display-4'> All Friends</h1>
+
+<div id="friends">
+
+  <% @friends.each do |friend| %>
+    <%= render friend %>
+    <p>
+      <%= link_to "Show this friend", friend, class:"btn btn-info" %>
+    </p>
+  <% end %>
+  
+</div>
+
+<%= link_to "New friend", new_friend_path, class:"btn btn-secondary" %>

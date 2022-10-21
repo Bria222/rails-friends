@@ -12,11 +12,14 @@
       </li>
       <li class="nav-item">
       <%= link_to 'About us', home_about_path , class:"nav-link"%>
-       
       </li>
       
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" >add friend</a>
+      <%= link_to 'list friends', friends_path , class:"nav-link"%>
+      </li>
+
+      <li class="nav-item">
+      <%= link_to 'add friend', new_friend_path , class:"nav-link"%>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
